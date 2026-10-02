@@ -45,7 +45,7 @@ Abra `http://localhost:8000`. O servidor HTTP serve apenas a visualização loca
 - O acervo indica fundação em fevereiro de 1993, mas não fornece o dia. `1993-02-01` é provisório; confirmar a data completa. O dia configurado determina o momento da atualização anual.
 - Marca, serviços, área de atendimento, telefone, e-mail e imagens vieram do conteúdo histórico. Validar atualidade e autorização de uso.
 - O wordmark em azul é recortado do logo original do acervo; o telefone e o antigo selo estático “25 anos” ficam de fora, sendo o selo atual calculado ao lado. Substituir o recorte por um arquivo vetorial oficial se a empresa o fornecer.
-- A página agora reúne serviços, quatro categorias de produtos, história/estrutura e os contatos preservados na referência. Todos os textos de oferta, dados e imagens continuam pendentes de aprovação.
+- A página agora reúne os serviços, história/estrutura e os contatos preservados na referência. Não há catálogo de produtos ou vendas. Os textos de oferta, dados e imagens continuam pendentes de aprovação.
 - A seção Contato usa `mailto:`/`tel:` com dados históricos e sem formulário. Validar os destinos antes de publicar.
 
 ## Acessibilidade prevista nesta fase

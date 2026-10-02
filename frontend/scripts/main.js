@@ -9,13 +9,12 @@ const company = {
 
 const foundedDate = new Date(`${company.foundedOn}T12:00:00`);
 const currentDate = new Date();
-const completedYears = getCompletedYears(foundedDate, currentDate);
+const completedYears = Number.isNaN(foundedDate.getTime())
+  ? null
+  : getCompletedYears(foundedDate, currentDate);
 
 document.querySelectorAll("[data-age-number]").forEach((element) => {
-  element.textContent = String(completedYears);
-});
-document.querySelectorAll("[data-company-age]").forEach((element) => {
-  element.hidden = false;
+  if (completedYears !== null) element.textContent = String(completedYears);
 });
 document.querySelectorAll("[data-founded-year]").forEach((element) => {
   element.textContent = String(foundedDate.getFullYear());
