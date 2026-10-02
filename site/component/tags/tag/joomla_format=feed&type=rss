@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Alfatek Informática</title>
+		<description><![CDATA[]]></description>
+		<link>/component/tags/tag/2</link>
+		<lastBuildDate>Thu, 05 Oct 2017 22:45:34 +0000</lastBuildDate>
+		<generator>Joomla! - Open Source Content Management</generator>
+		<atom:link rel="self" type="application/rss+xml" href="/component/tags/tag/joomla?format=feed&amp;type=rss"/>
+		<language>pt-br</language>
+		<managingEditor>52.marcos.vinicius@gmail.com (alfatek)</managingEditor>
+		<item>
+			<title>Bem-Vindo à Alfatek</title>
+			<link>/?id=1:test-page</link>
+			<guid isPermaLink="true">/?id=1:test-page</guid>
+			<description><![CDATA[<p style="text-align: justify;">Nossa empresa atua no setor de tecnologia, destacando-se no fornecimento de produtos, atendimento em campo e balcão, serviços de manutenção para computadores, monitores, notebooks,  impressoras, servidores e periféricos das empresas privadas, governo e público em geral da Grande Porto Alegre. O perfil da Alfatek é voltado para a Tecnologia da Informação, contando com profissionais altamente capacitados, moderno laboratório de reparos, e logística capaz de atender com rapidez e segurança às necessidades de nossos clientes.</p>]]></description>
+			<category>Bem-Vindo à Alfatek</category>
+			<pubDate>Sat, 11 Oct 2014 10:49:54 +0000</pubDate>
+		</item>
+	</channel>
+</rss>

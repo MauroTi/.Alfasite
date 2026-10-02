@@ -1,0 +1,87 @@
+/*----------- 
+colour - blue 
+------------*/
+
+body.site {
+	border-top: 3px solid #08C;
+	background-color: #f4f6f7		}
+a {
+	color: #08C;
+}
+a.brand.pull-left {
+	color: #08C;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+h1,h2,h3,h4,h5 {
+	color:#08C;
+}
+#masthead .brand {
+	font-weight: 400;
+}
+.navbar-inner, .nav-list > .active > a, 
+.nav-list > .active > a:hover, 
+.dropdown-menu li > a:hover, 
+.dropdown-menu .active > a, 
+.dropdown-menu .active > a:hover, 
+.nav-pills > .active > a, 
+.nav-pills > .active > a:hover,
+.btn-primary {
+	background: #08C;
+}
+		
+.moduletable.blue {
+	background-color: #08C;
+	padding: 10px;
+}
+.moduletable.blue h3,
+.moduletable.blue ul,
+.moduletable.blue a,
+.moduletable.blue p {
+	color: #fff !important;
+}
+
+.moduletable.light-blue {
+	background-color: #8DCEEF;
+	padding: 10px;
+}
+.moduletable.light-blue h3,
+.moduletable.light-blue ul,
+.moduletable.light-blue a,
+.moduletable.light-blue p {
+	color: #fff !important;
+}
+
+.moduletable.dark-blue {
+	background-color: #005884;
+	padding: 10px;
+}
+.moduletable.dark-blue h3,
+.moduletable.dark-blue ul,
+.moduletable.dark-blue a,
+.moduletable.dark-blue p {
+	color: #fff !important;
+}
+
+.navbar .btn-navbar .icon-bar {
+	background-color:#08c;
+}
+
+#sidebar h3,#aside h3 {
+	color:#08c;
+}
+#sidebar ul,
+#aside ul {
+	color: #08C;
+}
+.boxes p em.fa {
+	color:#08C;
+	border:1px solid #08C;
+}
+#footer p em.fa {
+	color:#08C;
+}
+p.fa {
+	color: #08C;
+	border: 1px solid #08C;
+}

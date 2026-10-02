@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<feed xmlns="http://www.w3.org/2005/Atom"  xml:lang="pt-br">
+	<title type="text">Alfatek Informática</title>
+	<subtitle type="text"></subtitle>
+	<link rel="alternate" type="text/html" href="http://www.alfatek.com.br.com.br"/>
+	<id>/component/tags/tag/joomla</id>
+	<updated>2017-10-05T22:45:34+00:00</updated>
+	<author>
+		<name>alfatek</name>
+		<email>52.marcos.vinicius@gmail.com</email>
+	</author>
+	<generator uri="https://www.joomla.org">Joomla! - Open Source Content Management</generator>
+	<link rel="self" type="application/atom+xml" href="/component/tags/tag/joomla?format=feed&amp;type=atom"/>
+	<entry>
+		<title>Bem-Vindo à Alfatek</title>
+		<link rel="alternate" type="text/html" href="/?id=1:test-page"/>
+		<published>2014-10-11T10:49:54+00:00</published>
+		<updated>2014-10-11T10:49:54+00:00</updated>
+		<id>/?id=1:test-page</id>
+		<summary type="html">&lt;p style=&quot;text-align: justify;&quot;&gt;Nossa empresa atua no setor de tecnologia, destacando-se no fornecimento de produtos, atendimento em campo e balcão, serviços de manutenção para computadores, monitores, notebooks,  impressoras, servidores e periféricos das empresas privadas, governo e público em geral da Grande Porto Alegre. O perfil da Alfatek é voltado para a Tecnologia da Informação, contando com profissionais altamente capacitados, moderno laboratório de reparos, e logística capaz de atender com rapidez e segurança às necessidades de nossos clientes.&lt;/p&gt;</summary>
+		<content type="html">&lt;p style=&quot;text-align: justify;&quot;&gt;Nossa empresa atua no setor de tecnologia, destacando-se no fornecimento de produtos, atendimento em campo e balcão, serviços de manutenção para computadores, monitores, notebooks,  impressoras, servidores e periféricos das empresas privadas, governo e público em geral da Grande Porto Alegre. O perfil da Alfatek é voltado para a Tecnologia da Informação, contando com profissionais altamente capacitados, moderno laboratório de reparos, e logística capaz de atender com rapidez e segurança às necessidades de nossos clientes.&lt;/p&gt;</content>
+		<category term="Bem-Vindo à Alfatek" />
+	</entry>
+</feed>
