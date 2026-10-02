@@ -1,5 +1,10 @@
-# Alfasite
-/README.md
-docs/
-site/
-source/
+# Arquivos temporários e metadados do sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.swp
+
+# Dados de operação do servidor e executável auxiliar do pacote hospedado
+/stats/
+/wrapper-bin/
