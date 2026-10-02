@@ -16,11 +16,14 @@ img { display: block; max-width: 100%; }
 
 .site-header { position: relative; z-index: 10; background: var(--color-white); }
 .header-inner { display: flex; min-height: 90px; align-items: center; justify-content: space-between; gap: 2rem; }
-.brand { display: inline-flex; align-items: center; gap: .7rem; color: var(--color-navy); text-decoration: none; }
+.brand { display: inline-flex; align-items: center; gap: .65rem; color: var(--color-navy); }
+.brand-home { display: inline-flex; align-items: center; gap: .35rem; color: inherit; text-decoration: none; }
 .brand-logo-window { display: block; position: relative; width: 142px; height: 62px; flex: 0 0 142px; overflow: hidden; }
 .brand-logo-window img { position: absolute; top: 0; left: 0; width: 370px; max-width: none; height: auto; }
-.brand-age { display: flex; width: 58px; height: 58px; flex: 0 0 58px; flex-direction: column; align-items: center; justify-content: center; margin-left: -.35rem; color: var(--color-blue); border: 2px dotted var(--color-blue); border-radius: 50%; font-size: .47rem; line-height: 1.02; text-align: center; }
+.brand-age { display: flex; width: 58px; height: 58px; flex: 0 0 58px; flex-direction: column; align-items: center; justify-content: center; color: var(--color-blue); border: 2px dotted var(--color-blue); border-radius: 50%; font-size: .47rem; line-height: 1.02; text-align: center; }
 .brand-age strong { font-size: 1.27rem; font-weight: 650; letter-spacing: -.06em; }
+.brand-phone { color: var(--color-blue); font-size: .83rem; font-weight: 500; letter-spacing: -.025em; text-decoration: none; white-space: nowrap; }
+.brand-phone:hover { color: var(--color-navy); text-decoration: underline; }
 .site-nav { display: flex; align-items: center; gap: 2.15rem; }
 .site-nav a { color: #354a5a; font-size: .9rem; font-weight: 620; text-decoration: none; }
 .site-nav a:hover { color: var(--color-blue); }
@@ -160,6 +163,7 @@ h1, h2, h3 { font-family: var(--font-display); }
 .site-footer { color: #d4dee3; background: var(--color-navy-deep); }
 .footer-main { display: flex; min-height: 140px; align-items: center; justify-content: space-between; gap: 2rem; }
 .brand-footer { color: var(--color-white); }
+.brand-footer .brand-phone { color: #fff; }
 .brand-footer .brand-logo-window { height: 60px; filter: grayscale(1) brightness(0) invert(1); opacity: .92; }
 .footer-main > p { margin: 0; color: #aebdc6; font-size: .82rem; }
 .back-top { color: #e8c69e; font-size: .8rem; font-weight: 650; text-decoration: none; }
@@ -189,10 +193,12 @@ h1, h2, h3 { font-family: var(--font-display); }
   .container { width: min(100% - 2rem, var(--container)); }
   .header-inner { min-height: 76px; }
   .brand { gap: .42rem; }
-  .brand-logo-window { width: 132px; height: 58px; flex-basis: 132px; }
-  .brand-logo-window img { width: 344px; }
-  .brand-age { width: 50px; height: 50px; flex-basis: 50px; margin-left: -.2rem; font-size: .41rem; }
-  .brand-age strong { font-size: 1.06rem; }
+  .brand-home { gap: .25rem; }
+  .brand-logo-window { width: 112px; height: 52px; flex-basis: 112px; }
+  .brand-logo-window img { width: 292px; }
+  .brand-age { width: 44px; height: 44px; flex-basis: 44px; font-size: .36rem; }
+  .brand-age strong { font-size: .93rem; }
+  .brand-phone { font-size: .62rem; letter-spacing: -.035em; }
   .menu-toggle { position: relative; z-index: 12; display: grid; width: 46px; height: 46px; place-items: center; padding: 0; color: var(--color-navy); background: transparent; border: 1px solid var(--color-line); border-radius: 4px; cursor: pointer; }
   .menu-toggle-lines, .menu-toggle-lines::before, .menu-toggle-lines::after { display: block; width: 18px; height: 2px; background: currentColor; transition: transform .18s ease; }
   .menu-toggle-lines { position: relative; }
