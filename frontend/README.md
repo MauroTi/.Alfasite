@@ -46,7 +46,7 @@ Abra `http://localhost:8000`. O servidor HTTP serve apenas a visualização loca
 - O acervo indica fundação em fevereiro de 1993, mas não fornece o dia. `1993-02-01` é provisório; confirmar a data completa. O dia configurado determina o momento da atualização anual.
 - Marca, serviços, área de atendimento, telefone, e-mail e imagens vieram do conteúdo histórico. Validar atualidade e autorização de uso.
 - O cabeçalho e o rodapé usam o logo isolado enviado pelo usuário, acompanhado do telefone e do selo de idade calculado. O selo estático antigo “25 anos” não é usado.
-- O layout reproduz a estrutura visual da página original arquivada (marca, faixa principal, boas-vindas, blocos institucionais, detalhes em colunas e contato), removendo conteúdo de vendas. Os textos de oferta, dados e imagens recuperados continuam pendentes de aprovação.
+- O layout segue a referência visual enviada pelo usuário: cabeçalho, hero, três cards, faixa de história com foto e barra de contato. As quatro imagens do hero/cards foram recortadas diretamente da referência. Apenas a imagem da fachada em `assets/alfatek4.jpg` foi substituída pela foto real recuperada do acervo. O texto e os dados históricos devem ser confirmados antes da publicação.
 - A seção Contato usa `mailto:`/`tel:` com dados históricos e sem formulário. Validar os destinos antes de publicar.
 
 ## Acessibilidade prevista nesta fase
