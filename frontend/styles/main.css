@@ -14,8 +14,8 @@ a:hover { color: var(--link-hover-color); }
 .header-top { display: flex; min-height: 112px; align-items: center; justify-content: space-between; gap: 1.5rem; }
 .brand { display: flex; align-items: center; gap: 1.4rem; }
 .brand-home { display: flex; align-items: center; gap: .85rem; text-decoration: none; }
-.brand-logo-window { position: relative; display: block; width: 250px; height: 82px; overflow: hidden; }
-.brand-logo-window img { position: absolute; top: 0; left: 0; width: 636px; max-width: none; }
+.brand-logo-window { position: relative; display: block; width: 250px; height: 100px; overflow: hidden; }
+.brand-logo-window img { width: 100%; height: 100%; object-fit: contain; }
 .brand-age { display: flex; width: 72px; height: 72px; flex: 0 0 72px; flex-direction: column; align-items: center; justify-content: center; color: #245f87; background: #f3f7f9; border: 2px solid #245f87; border-radius: 50%; box-shadow: 0 2px 7px rgb(16 44 70 / 12%); font-size: .76rem; font-weight: 700; line-height: 1.1; }
 .brand-age strong { font-size: 1.8rem; line-height: 1.05; }
 .brand-phone { color: #294d63; font-size: 1rem; font-weight: 700; text-decoration: none; white-space: nowrap; }
@@ -84,9 +84,8 @@ a:hover { color: var(--link-hover-color); }
 
 .site-footer { color: #d9e1e5; background: #263c48; }
 .footer-main { display: flex; min-height: 118px; align-items: center; justify-content: space-between; gap: 2rem; }
-.footer-brand { display: grid; color: #fff; line-height: 1.1; text-decoration: none; }
-.footer-wordmark { font-size: 1.8rem; font-weight: 750; letter-spacing: -.08em; }
-.footer-brand > span:last-child { text-align: right; font-size: .72rem; }
+.footer-brand { display: block; padding: .3rem .4rem; background: #fff; text-decoration: none; }
+.footer-brand img { width: 185px; height: auto; }
 .footer-main p { margin: 0; color: #c1cdd2; font-size: .78rem; }
 .footer-main > a:last-child { color: #fff; font-size: .8rem; text-decoration: none; }
 .footer-bottom { display: flex; min-height: 46px; align-items: center; justify-content: space-between; gap: 1rem; color: #b9c6cc; border-top: 1px solid rgb(255 255 255 / 16%); font-size: .7rem; }
@@ -104,8 +103,7 @@ a:hover { color: var(--link-hover-color); }
 @media (max-width: 980px) {
   .header-top { min-height: 98px; gap: 1rem; }
   .brand { gap: .8rem; }
-  .brand-logo-window { width: 205px; height: 68px; }
-  .brand-logo-window img { width: 521px; }
+  .brand-logo-window { width: 205px; height: 82px; }
   .brand-age { width: 62px; height: 62px; flex-basis: 62px; }
   .brand-age strong { font-size: 1.5rem; }
   .brand-phone { font-size: .83rem; }
@@ -118,8 +116,7 @@ a:hover { color: var(--link-hover-color); }
   .header-top { min-height: 88px; }
   .brand { gap: .45rem; }
   .brand-home { gap: .35rem; }
-  .brand-logo-window { width: clamp(110px, 32vw, 175px); height: 58px; }
-  .brand-logo-window img { width: clamp(280px, 81vw, 445px); }
+  .brand-logo-window { width: clamp(110px, 32vw, 175px); height: 64px; }
   .brand-age { width: 48px; height: 48px; flex-basis: 48px; font-size: .64rem; }
   .brand-age strong { font-size: 1.2rem; }
   .brand-phone { max-width: 85px; font-size: .68rem; white-space: normal; line-height: 1.25; }
@@ -164,8 +161,7 @@ a:hover { color: var(--link-hover-color); }
 }
 @media (max-width: 390px) {
   .header-top { gap: .25rem; }
-  .brand-logo-window { width: 86px; height: 49px; }
-  .brand-logo-window img { width: 220px; }
+  .brand-logo-window { width: 86px; height: 44px; }
   .brand-age { width: 38px; height: 38px; flex-basis: 38px; font-size: .56rem; }
   .brand-age strong { font-size: 1rem; }
   .brand-phone { max-width: 52px; font-size: .57rem; }
