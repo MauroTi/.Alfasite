@@ -2,6 +2,10 @@
 
 Repositório de referência para analisar e modernizar o site histórico da Alfatek.
 
+## Novo site — primeira fase
+
+O frontend inicial está em [`frontend/`](frontend/), implementado com HTML, CSS e JavaScript sem backend nem conexão a banco. Para esta fase, manter estático é a opção indicada; ver [`frontend/DECISAO-ARQUITETURA.md`](frontend/DECISAO-ARQUITETURA.md) e [`frontend/README.md`](frontend/README.md). Conteúdo recuperado do acervo ainda precisa ser confirmado antes da publicação.
+
 ## Conteúdo
 
 - `site/`: fotografia estática navegável do site incluído no backup. Os caminhos absolutos do domínio foram adaptados para navegação local.

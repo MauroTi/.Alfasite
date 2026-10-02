@@ -1,0 +1,20 @@
+:root {
+  color-scheme: light;
+  --color-ink: #142c3e;
+  --color-navy: #102c46;
+  --color-navy-deep: #0b2035;
+  --color-blue: #285b83;
+  --color-blue-soft: #eaf1f5;
+  --color-paper: #f7f7f3;
+  --color-white: #fff;
+  --color-muted: #657582;
+  --color-line: #dce2e3;
+  --color-accent: #e6a65c;
+  --color-accent-dark: #9a5b1d;
+  --font-body: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --container: 1160px;
+  --radius-card: 8px;
+  --shadow-card: 0 24px 70px rgb(20 44 62 / 14%);
+  --focus-ring: 3px solid #ba681e;
+}
