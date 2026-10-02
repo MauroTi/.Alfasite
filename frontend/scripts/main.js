@@ -14,7 +14,13 @@ const completedYears = Number.isNaN(foundedDate.getTime())
   : getCompletedYears(foundedDate, currentDate);
 
 document.querySelectorAll("[data-age-number]").forEach((element) => {
-  if (completedYears !== null) element.textContent = String(completedYears);
+  if (completedYears !== null) {
+    element.textContent = String(completedYears);
+    element.closest("[data-company-age]")?.setAttribute(
+      "aria-label",
+      `${completedYears} anos de história`,
+    );
+  }
 });
 document.querySelectorAll("[data-founded-year]").forEach((element) => {
   element.textContent = String(foundedDate.getFullYear());

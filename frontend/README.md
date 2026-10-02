@@ -1,6 +1,6 @@
 # Novo frontend Alfatek — Fase 1
 
-Frontend institucional inicial em HTML semântico, CSS e JavaScript ES Modules. **A recomendação para esta fase é manter o site estático**: não há requisito confirmado de login, painel editorial, transações ou armazenamento de dados de visitantes. Esta fase não contém backend, formulário funcional, login nem conexão MySQL. O menu mobile, cálculo informativo da idade da empresa e ano corrente funcionam no navegador.
+Frontend institucional inicial em HTML semântico, CSS e JavaScript ES Modules. **A recomendação para esta fase é manter o site estático**: não há requisito confirmado de login, painel editorial, transações ou armazenamento de dados de visitantes. Esta fase não contém backend, formulário funcional, login nem conexão MySQL. O menu mobile, alternância entre tema claro/escuro, cálculo informativo da idade da empresa e ano corrente funcionam no navegador.
 
 Site estático continua compatível com HTTPS; certificado TLS e redirecionamento HTTP→HTTPS são tarefas da hospedagem/domínio, não exigem banco nem backend.
 
@@ -38,6 +38,7 @@ Abra `http://localhost:8000`. O servidor HTTP serve apenas a visualização loca
 - `scripts/main.js`: composição dos módulos e configuração central do ano de fundação.
 - `scripts/modules/company-age.js`: cálculo de anos completos pela data local.
 - `scripts/modules/mobile-navigation.js`: comportamento do menu compacto.
+- `scripts/theme-toggle.js`: preferência do sistema, alternância manual e persistência local, compatível com hospedagem HTTP/HTTPS e abertura local do frontend.
 - `assets/`: favicon novo e imagens recuperadas do acervo para prototipagem.
 
 ## Pendências editoriais antes da publicação
