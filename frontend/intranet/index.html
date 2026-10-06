@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-BR" data-default-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#12384d">
+    <meta name="description" content="Acesso interno aos aplicativos da equipe Alfatek.">
+    <title>Entrar na área da equipe | Alfatek Informática</title>
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../styles/tokens.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="intranet.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <header class="site-header">
+      <div class="header-top container">
+        <a class="brand-home" href="../" aria-label="Alfatek Informática, início">
+          <span class="brand-logo-window"><img src="../assets/logo-mark.png" alt="Alfatek Informática"></span>
+          <span class="brand-age" aria-label="33 anos de história"><strong>33</strong><span>anos</span></span>
+        </a>
+        <a class="back-link" href="../">← Voltar ao site</a>
+        <button class="theme-toggle" type="button" aria-label="Ativar modo escuro" aria-pressed="false" title="Ativar modo escuro"><span class="theme-toggle-icon" aria-hidden="true">☾</span><span class="theme-label" aria-hidden="true">Modo escuro</span><span class="sr-only">Ativar modo escuro</span></button>
+      </div>
+    </header>
+    <main id="conteudo" class="login-layout container">
+      <section class="login-welcome" aria-labelledby="welcome-title">
+        <span class="login-eyebrow">AMBIENTE CORPORATIVO</span>
+        <h1 id="welcome-title">Área da equipe</h1>
+        <p>Acesse os aplicativos e arquivos internos da Alfatek com sua conta autorizada.</p>
+        <div class="login-illustration" aria-hidden="true">⌘</div>
+      </section>
+      <section class="login-card" aria-labelledby="login-title">
+        <span class="login-lock" aria-hidden="true">▣</span>
+        <h2 id="login-title">Entrar</h2>
+        <p class="login-subtitle">Acesso exclusivo para funcionários</p>
+
+        <div class="login-notice" role="status">
+          <strong>Autenticação em preparação</strong>
+          <span>O Firebase Authentication será configurado para aceitar e-mail e senha ou Conta Google. Ainda não é possível entrar por essas opções.</span>
+        </div>
+
+        <form class="auth-form" aria-label="Entrar com e-mail e senha" autocomplete="on">
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" autocomplete="username" placeholder="seu.email@empresa.com" disabled>
+          <label for="password">Senha</label>
+          <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Senha da conta do portal" disabled>
+          <button class="auth-submit" type="button" disabled>Entrar com e-mail</button>
+          <button class="password-reset-link" type="button" disabled>Esqueci minha senha</button>
+        </form>
+
+        <div class="auth-divider" aria-hidden="true"><span>ou</span></div>
+        <div class="google-signin-placeholder" aria-describedby="google-signin-status">
+          <span class="google-mark" aria-hidden="true">G</span>
+          <span>Continuar com Google</span>
+          <span class="setup-badge">EM BREVE</span>
+        </div>
+        <p id="google-signin-status" class="login-security">As opções serão ativadas quando o Firebase e a autorização no servidor estiverem configurados.</p>
+
+        <div class="demo-access" role="note">
+          <strong>Acesso temporário para testes</strong>
+          <p>Enquanto a autenticação Google é configurada, use o botão abaixo para abrir o portal de demonstração. Ele não valida a identidade e não deve ser usado quando houver informações internas reais.</p>
+          <a class="demo-access-button" href="portal.html">Entrar sem credenciais <span aria-hidden="true">→</span></a>
+        </div>
+
+        <details class="account-help">
+          <summary>Esqueci minha senha ou não consigo acessar</summary>
+          <div class="account-help-content">
+            <p>Quando o Firebase for ativado, a opção “Esqueci minha senha” enviará um link de redefinição para o e-mail cadastrado. A Alfatek não verá nem armazenará a senha em texto.</p>
+            <p>Para entrar com Google, use a conta autorizada pela empresa. Se o acesso for negado, solicite ao administrador que confira se seu e-mail está ativo.</p>
+          </div>
+        </details>
+
+        <p class="login-security login-security-bottom">O administrador cadastra e remove e-mails autorizados; a redefinição de senha é feita pelo serviço de autenticação.</p>
+      </section>
+    </main>
+    <footer class="site-footer"><div class="container intranet-footer"><a class="footer-brand" href="../">alfatek<small> informática</small></a><p>© 2026 Alfatek Informática. Área da equipe.</p></div></footer>
+    <script defer src="../scripts/theme-toggle.js"></script>
+  </body>
+</html>

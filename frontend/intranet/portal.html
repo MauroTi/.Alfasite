@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR" data-default-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#12384d">
+    <meta name="description" content="Demonstração do portal de aplicativos da equipe Alfatek.">
+    <title>Aplicativos da equipe | Alfatek Informática</title>
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../styles/tokens.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="intranet.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <header class="site-header">
+      <div class="header-top container">
+        <a class="brand-home" href="../" aria-label="Alfatek Informática, início">
+          <span class="brand-logo-window"><img src="../assets/logo-mark.png" alt="Alfatek Informática"></span>
+          <span class="brand-age" aria-label="33 anos de história"><strong>33</strong><span>anos</span></span>
+        </a>
+        <a class="back-link" href="index.html">Sair do portal</a>
+        <button class="theme-toggle" type="button" aria-label="Ativar modo escuro" aria-pressed="false" title="Ativar modo escuro"><span class="theme-toggle-icon" aria-hidden="true">☾</span><span class="theme-label" aria-hidden="true">Modo escuro</span><span class="sr-only">Ativar modo escuro</span></button>
+      </div>
+    </header>
+    <main id="conteudo" class="portal-main container">
+      <div class="portal-demo-note" role="status"><strong>Modo de demonstração</strong><span>Esta página está aberta sem autenticação. Não coloque aqui aplicativos, arquivos ou informações restritas até implementarmos o controle de acesso no servidor.</span></div>
+      <div class="portal-heading"><div><span class="login-eyebrow">AMBIENTE CORPORATIVO</span><h1>Aplicativos da equipe</h1><p>Atalhos internos da Alfatek aparecerão aqui.</p></div></div>
+      <section class="app-grid" aria-label="Aplicativos disponíveis">
+        <article class="app-card app-card-placeholder"><span class="app-symbol" aria-hidden="true">＋</span><div><h2>Novo aplicativo</h2><p>Espaço reservado para cadastrar futuros sistemas da equipe.</p></div><span class="app-status">EM PREPARAÇÃO</span></article>
+        <a class="app-card app-card-placeholder app-card-link" href="downloads/"><span class="app-symbol" aria-hidden="true">⇩</span><div><h2>Arquivos para download</h2><p>Abrir a pasta de arquivos disponibilizados pela equipe.</p></div><span class="app-status">ABRIR PASTA</span></a>
+      </section>
+    </main>
+    <footer class="site-footer"><div class="container intranet-footer"><a class="footer-brand" href="../">alfatek<small> informática</small></a><p>© 2026 Alfatek Informática. Área da equipe.</p></div></footer>
+    <script defer src="../scripts/theme-toggle.js"></script>
+  </body>
+</html>

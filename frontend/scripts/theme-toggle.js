@@ -21,9 +21,12 @@
 
   const systemPreference = window.matchMedia("(prefers-color-scheme: dark)");
   const savedTheme = getSavedTheme();
+  const pageDefaultTheme = document.documentElement.dataset.defaultTheme;
   const initialTheme = savedTheme === "light" || savedTheme === "dark"
     ? savedTheme
-    : systemPreference.matches ? "dark" : "light";
+    : pageDefaultTheme === "dark" || (pageDefaultTheme !== "light" && systemPreference.matches)
+      ? "dark"
+      : "light";
 
   const applyTheme = (theme) => {
     const isDark = theme === "dark";
@@ -50,6 +53,6 @@
 
   systemPreference.addEventListener("change", (event) => {
     if (getSavedTheme() === "light" || getSavedTheme() === "dark") return;
-    applyTheme(event.matches ? "dark" : "light");
+    applyTheme(pageDefaultTheme === "dark" ? "dark" : event.matches ? "dark" : "light");
   });
 })();
