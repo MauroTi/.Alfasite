@@ -1,0 +1,4 @@
+Options -Indexes
+<Files "portal.html">
+  Require all denied
+</Files>

@@ -1,0 +1,12 @@
+{
+  "data_dir": "/caminho/privado/alfatek-homologacao",
+  "db_host": "localhost",
+  "db_port": 3306,
+  "db_name": "PREENCHER_BANCO_TESTE",
+  "db_user": "PREENCHER_USUARIO_TESTE",
+  "db_password": "PREENCHER_SENHA_FORTE",
+  "firebase_project_id": "PREENCHER_PROJETO_FIREBASE_TESTE",
+  "firebase_api_key": "PREENCHER_CHAVE_WEB_DO_PROJETO_TESTE",
+  "firebase_service_file": "/caminho/privado/firebase-admin-homologacao.json",
+  "ca_file": ""
+}
