@@ -9,7 +9,7 @@
     <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="../styles/tokens.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="intranet.css">
+    <link rel="stylesheet" href="intranet.css?v=local-auth-1">
   </head>
   <body>
     <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
@@ -35,38 +35,53 @@
         <h2 id="login-title">Entrar</h2>
         <p class="login-subtitle">Acesso exclusivo para funcionários</p>
 
-        <div class="login-notice" role="status">
-          <strong>Autenticação em preparação</strong>
-          <span>O Firebase Authentication será configurado para aceitar e-mail e senha ou Conta Google. Ainda não é possível entrar por essas opções.</span>
+        <div class="login-notice" id="auth-status" role="status" aria-live="polite">
+          <strong>Entrar com sua conta autorizada</strong>
+          <span>O acesso aos aplicativos só será liberado depois que a identidade for validada pelo servidor e estiver ativa na lista da empresa.</span>
         </div>
 
-        <form class="auth-form" aria-label="Entrar com e-mail e senha" autocomplete="on">
+        <form class="auth-form" id="login-form" aria-label="Entrar com e-mail e senha" autocomplete="on">
           <label for="email">E-mail</label>
-          <input id="email" name="email" type="email" autocomplete="username" placeholder="seu.email@empresa.com" disabled>
+          <input id="email" name="email" type="email" autocomplete="username" placeholder="seu.email@empresa.com" required>
           <label for="password">Senha</label>
-          <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Senha da conta do portal" disabled>
-          <button class="auth-submit" type="button" disabled>Entrar com e-mail</button>
-          <button class="password-reset-link" type="button" disabled>Esqueci minha senha</button>
+          <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Senha da conta do portal" required>
+          <button class="auth-submit" id="email-signin" type="submit" disabled>Entrar com e-mail</button>
+          <button class="password-reset-link" id="password-reset" type="button" disabled>Esqueci minha senha</button>
         </form>
 
         <div class="auth-divider" aria-hidden="true"><span>ou</span></div>
-        <div class="google-signin-placeholder" aria-describedby="google-signin-status">
+        <button class="google-signin-placeholder" id="google-signin" type="button" aria-describedby="google-signin-status" disabled>
           <span class="google-mark" aria-hidden="true">G</span>
           <span>Continuar com Google</span>
-          <span class="setup-badge">EM BREVE</span>
-        </div>
-        <p id="google-signin-status" class="login-security">As opções serão ativadas quando o Firebase e a autorização no servidor estiverem configurados.</p>
+        </button>
+        <button class="password-reset-link" id="verify-email" type="button" hidden>Enviar link de verificação de e-mail</button>
+        <p id="google-signin-status" class="login-security">A autenticação não concede acesso automaticamente: o servidor confere a autorização da empresa.</p>
 
-        <div class="demo-access" role="note">
-          <strong>Acesso temporário para testes</strong>
-          <p>Enquanto a autenticação Google é configurada, use o botão abaixo para abrir o portal de demonstração. Ele não valida a identidade e não deve ser usado quando houver informações internas reais.</p>
-          <a class="demo-access-button" href="portal.html">Entrar sem credenciais <span aria-hidden="true">→</span></a>
-        </div>
+        <p class="auth-error" id="auth-error" role="alert" hidden></p>
+        <p class="auth-success" id="auth-success" role="status" hidden></p>
+
+        <section class="account-link-panel login-account-link" id="account-link-panel" aria-labelledby="account-link-title" hidden>
+          <div>
+            <span class="login-eyebrow">ETAPA DE VINCULAÇÃO</span>
+            <h2 id="account-link-title">Vincular formas de acesso</h2>
+            <p>Para esta conta, o portal exige Google e e-mail/senha ligados à mesma identidade Firebase.</p>
+            <p class="account-link-methods" id="account-link-methods" role="status">Conferindo métodos vinculados…</p>
+          </div>
+          <form class="auth-form account-link-password" id="link-password-form" hidden>
+            <label for="link-password">Nova senha do portal</label>
+            <input id="link-password" name="new-password" type="password" autocomplete="new-password" minlength="12" placeholder="Use pelo menos 12 caracteres" required>
+            <label for="link-password-confirm">Confirme a nova senha</label>
+            <input id="link-password-confirm" name="new-password-confirm" type="password" autocomplete="new-password" minlength="12" required>
+            <button class="auth-submit" type="submit">Vincular e-mail e senha</button>
+          </form>
+          <button class="auth-submit account-link-google" id="link-google-button" type="button" hidden>Vincular conta Google</button>
+          <p class="account-link-status" id="account-link-status" role="status" aria-live="polite"></p>
+        </section>
 
         <details class="account-help">
           <summary>Esqueci minha senha ou não consigo acessar</summary>
           <div class="account-help-content">
-            <p>Quando o Firebase for ativado, a opção “Esqueci minha senha” enviará um link de redefinição para o e-mail cadastrado. A Alfatek não verá nem armazenará a senha em texto.</p>
+            <p>A opção “Esqueci minha senha” envia um link de redefinição pelo Firebase para o e-mail informado. A Alfatek não vê nem armazena sua senha.</p>
             <p>Para entrar com Google, use a conta autorizada pela empresa. Se o acesso for negado, solicite ao administrador que confira se seu e-mail está ativo.</p>
           </div>
         </details>
@@ -76,5 +91,6 @@
     </main>
     <footer class="site-footer"><div class="container intranet-footer"><a class="footer-brand" href="../">alfatek<small> informática</small></a><p>© 2026 Alfatek Informática. Área da equipe.</p></div></footer>
     <script defer src="../scripts/theme-toggle.js"></script>
+    <script type="module" src="../scripts/firebase-login.js?v=lan-http-redirect-20261008"></script>
   </body>
 </html>
